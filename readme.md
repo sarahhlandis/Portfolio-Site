@@ -3,6 +3,7 @@
 #### Relevant External Links:
 - ##### Website Deployment: [Sarah Landis Portfolio](https://sarahlandis.netlify.app/)
 - ##### GitHub Repository: [Sarah Landis Portfolio](https://github.com/sarahhlandis/Sarah-Landis-Portfolio)
+- ##### Video Walkthru: [Video Walkthru](/docs/Sarah%20Landis%20Porfolio%20Walkthru.mp4)
 
 ### Purpose: 
 The purpose of this website is to show off some HTML and CSS skills that I've learned. This website is meant to serve as my functioning portfolio - I figure it will be an infinite process so I recommend to keep an eye out for any modifications and refinements. The goal is to showcase some cool Vanilla CSS effects and clean HTML organization in order to attract employers and developers to either want to work with me or inspire them to create something even better.
