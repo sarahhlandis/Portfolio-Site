@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="">
+        <link rel="stylesheet" href="/src/stylesheets/stylesheet.css">
+    
+        <!--Special font import-->
+        <link href="https://api.fontshare.com/v2/css?f[]=lora@701,401,500,501,400,600,601,2,700,1&display=swap" rel="stylesheet">
+       
+        <!--Hero Delayed Appear code begins-->
+        <!-- <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal({duration:300})
+        </script> -->
+        <!--Hero Delayed Appear code ends-->
+        
+        <!--Social Media Icon import-->
+        <script src="https://kit.fontawesome.com/908283b210.js" crossorigin="anonymous"></script>
+        <title>Sarah Landis|Connect</title>
+    </head>
+    
+<body>
+    <a name="top"></a> <!--for top of page scroll-->
+
+    <!--Header begins-->
+    <header id="header">
+        <div class="home">
+            <a href="/index.html">S.</a> 
+        </div>
+
+        <menu id="nav_bar">
+            <ul>
+                <!--Dark Mode feature starts-->
+                <li>
+                    <button class="nightMode" onclick="nightMode()"><i class="fa-regular fa-moon fa-s"></i></button>
+                </li> 
+                <!--Dark Mode feature ends-->
+                <li><a href="/src/pages/aboutme.html">Me</a></li>  
+                <li><a href="/src/pages/blog.html">Blog</a></li> 
+                <li><a href="/src/pages/contact.html">Contact</a></li> 
+            </ul>
+        </menu>
+    </header>   
+    <!--Header ends-->
+
+    <main class="connectBody">
+        <h3 class="connectTitle">
+            connect with me
+        </h3>
+        <section class="hello">
+            <h2>Hi there, <br> If you've found this page, hopefully you're wanting to know more about me as a person. If you're
+                in the wrong spot and are looking for more information about me in the workplace, check out my 'me' (above) or 'about' (below) section. 
+            </h2>
+            <div class="splitContainer">
+                <span class="left">
+                    <p> So... a bit about me. I was actually born in India, and was adopted by an American family - my parents were both
+                        computer engineers but until recently, I actually had no idea what that entailed. I just knew they were <i>very</i> smart.
+                        My dad had an IBM Thinkpad in the 90s which was pretty high tech for the early days and I absolutely loved how fast the 
+                        mouse would move if I vigorously held the little red button in the middle of the keyboard.
+                    </p>
+                </span>
+                <span class="middle">
+                    <p>
+                        Anyways, fast-forward to now and I'm always the one in the group who can press a few keys/buttons on anything electronic
+                    and voilà - the item is working again! I always liked computers and their advanced capabilities so I think it's fitting
+                    that I've taken the route in synthesizing design and computers, in whatever way that may be. I have a passion for clean and minimum 
+                    design when I create which is probably also a testament to my lifestyle. I also enjoy challenging thought-processes and logic,
+                    which may have come from my general childhood. 
+                    </p>
+                </span>
+                <span class="right">
+                    <p>
+                    Since moving to Australia from Washington D.C. (USA), I've been lucky enough to gain a greater appreciation for the general 
+                    outdoors. I enjoy spending time in the sun and near the ocean. I try to live a mindful and purposeful daily life, with balance 
+                    and energy. I spend a lot of time doing pilates and riding horses (when I can)! My husband and I also love to travel and experiencing
+                    new places. A fun fact about me - I've gone cage-floor diving with great white sharks off the coast of South Australia!
+                    </p>
+                </span>
+            </div>
+            <div class="end">
+                <p>
+                If you'd like to know more or think we'd be a good team for a project in the professional domain, feel free to click the contact button 
+                and send me a message!
+                </p>
+                <hr>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer begins-->
+    <footer class="footer">
+        <nav class="bottomNav">
+            <a href="#top">Back to Top</a>
+            <a href="/src/pages/aboutme.html">About</a>
+            <a href="/src/pages/contact.html">Say Hello</a>
+        </nav>
+        <section class="copy">
+            <div class="copyright">
+            <p>Designed by Sarah Landis • 2022 &copy; </p>
+            </div>
+            <div class="homeLink">
+                <a href="/index.html">S.</a> 
+            </div>
+        </section><br>
+    </footer> 
+    <!--Footer ends-->
+
+<script src="../scripts/index.js"></script>
+<script>
+if(localStorage.getItem("toggle")==="yes"){
+    nightMode();
+}
+</script>
+</body>
+</html>

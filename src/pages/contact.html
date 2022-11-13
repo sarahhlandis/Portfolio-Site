@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="">
+    <link rel="stylesheet" href="/src/stylesheets/stylesheet.css">
+
+    <!--Special font import-->
+    <link href="https://api.fontshare.com/v2/css?f[]=lora@701,401,500,501,400,600,601,2,700,1&display=swap" rel="stylesheet">
+    
+    <!--Hero Delayed Appear code begins-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({duration:1000})
+    </script>
+    <!--Hero Delayed Appear code ends-->
+
+    <!--Social Media Icon import-->
+    <script src="https://kit.fontawesome.com/908283b210.js" crossorigin="anonymous"></script>
+    <title>Sarah Landis</title>
+</head>
+
+<body>
+<a name="top"></a> <!--for top of page scroll-->
+
+<!--Header begins-->
+<div id="header">
+    <div class="home">
+        <a href="/index.html">S.</a> 
+    </div>
+
+    <menu id="nav_bar">
+        <ul>
+            <!--Dark Mode feature starts-->
+            <li>
+                <button class="nightMode" onclick="nightMode()"><i class="fa-regular fa-moon fa-s"></i></button>
+            </li> 
+            <!--Dark Mode feature ends-->
+            <li><a href="../pages/aboutme.html">Me</a></li>  
+            <li><a href="../pages/blog.html">Blog</a></li> 
+            <li><a href="../pages/contact.html">Contact</a></li> 
+        </ul>
+    </menu>
+</div>
+<!--Header ends-->
+
+<!--Contact Form begins-->
+<div class="contactForm">
+    <div class="welcome-text">
+    <h3>let's collaborate!</h3>
+    <h2>If something has piqued your interest and you wish to work together on a project, feel free to reach out. 
+        <br><br>Or if you're just wanting to say hi, I'd love to hear from you.<br><br>
+    </h2>
+    </div>
+    <form action="https://mailthis.to/sarah" method="POST" encType="multipart/form-data">
+        <!-- Name -->
+        <input type="name" name="firstName" placeholder="First Name">
+        <input type="name" name="lastName" placeholder="Last Name">
+        <!-- Email -->
+        <input type="email" name="email" placeholder="you@mail.com">
+        <!-- Comment Box -->
+        <textarea name="message" placeholder="Message" style="height:90px"></textarea>
+        <!-- File attachments -->
+        <input type="file" name="file" placeholder="">
+        <input type="hidden" name="_confirmation" value="Thanks for reaching out! I'll be in touch soon.">
+        <!-- Submit Button -->
+        <input type="submit" name="submit" value="Submit Form" class="btn btn-primary">
+      </form>
+</div>
+<!--Contact Form ends-->
+
+<!--Footer begins-->
+<footer class="footer">
+    <nav class="bottomNav">
+        <a href="#top">Back to Top</a>
+        <a href="/src/pages/aboutme.html">About</a>
+        <a href="/src/pages/contact.html">Say Hello</a>
+    </nav>
+    <section class="copy">
+        <div class="copyright">
+        <p>Designed by Sarah Landis • 2022 &copy; </p>
+        </div>
+        <div class="homeLink">
+            <a href="/index.html">S.</a> 
+        </div>
+    </section><br>
+</footer> 
+<!--Footer ends-->
+
+<script src="../scripts/index.js"></script>
+<script>
+if(localStorage.getItem("toggle")==="yes"){
+    nightMode();
+}
+</script>
+</body>
+</html>

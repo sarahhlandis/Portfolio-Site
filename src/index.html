@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta content="">
+    <link rel="stylesheet" href="/src/stylesheets/stylesheet.css">
+    
+    <!--Special font import-->
+    <link href="https://api.fontshare.com/v2/css?f[]=lora@701,401,500,501,400,600,601,2,700,1&display=swap" rel="stylesheet">
+    
+    <!-- Hero Delayed Appear code begins. This is using JS - I've chosen to use CSS animation
+    instead at this time. -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({duration:1000})
+    </script> -->
+    <!--Hero Delayed Appear code ends -->
+    
+    <!--Social Media Icon import-->
+    <script src="https://kit.fontawesome.com/908283b210.js" crossorigin="anonymous"></script>
+    
+    <title>Sarah Landis</title>
+</head>
+
+<body>
+<a name="top"></a> <!--for top of page scroll-->
+
+<!--Header begins-->
+<div id="header">
+    <div class="home">
+        <a href="./index.html">S.</a> 
+    </div>
+
+    <menu id="nav_bar">
+        <ul>
+        <!-- Dark Mode feature starts-->
+            <li>
+                <button class="nightMode" onclick="nightMode()"><i class="fa-regular fa-moon fa-s"></i></button>
+            </li> 
+        <!-- Dark Mode feature ends -->
+            <li><a href="./pages/aboutme.html">Me</a></li>  
+            <li><a href="./pages/blog.html">Blog</a></li> 
+            <li><a href="./pages/contact.html">Contact</a></li> 
+        </ul>
+    </menu>
+</div>
+<!--Header ends-->
+
+<!--Hero Center Content starts-->
+<main class="hero">
+    <section class="name">
+        <h1> Sarah Landis. </h1>
+    </section>
+    <!-- <h3 class="tagline">
+        A Full Stack Web Developer based in Byron Bay, Australia <br>
+        <span class="punchline">empowering through digital</span>
+    </h3> -->
+    <div class="tagline">
+        <h3>A full stack web developer based in Byron Bay, Australia</h3>
+        <p>empowering through digital</p>
+    </div>
+
+<!--script below for delayed reveal-->
+    <!-- <script>
+		ScrollReveal().reveal('.name',{ delay:300 })
+		ScrollReveal().reveal('.tagline', { delay: 1000 })
+		ScrollReveal().reveal('.punchline', { delay: 2200 })
+	</script> -->
+<!--end of script for delayed reveal-->
+
+<section class="central-grid">
+    <span class="iconsVertical">
+        <div class="socialIcons">
+            <a href="https://github.com/sarahhlandis"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sarahhlandis/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="vertical-line"></div>
+    </span>
+    <span class="biglinks">
+        <li><a href="./pages/projects.html">projects</a></li>  
+        <li><a href="./pages/connect.html">connect</a></li> 
+    </span>
+</section>
+</main>
+<!--hero center content ends-->
+
+<!--Footer begins-->
+<footer class="footer">
+    <nav class="bottomNav">
+        <a href="#top">Back to Top</a>
+        <a href="./pages/aboutme.html">About</a>
+        <a href="./pages/contact.html">Say Hello</a>
+    </nav>
+    <section class="copy">
+        <div class="copyright">
+        <p>Designed by Sarah Landis • 2022 &copy; </p>
+        </div>
+        <div class="homeLink">
+            <a href="./index.html">S.</a> 
+        </div>
+    </section><br>
+</footer> 
+<!--Footer ends-->
+
+
+<script src="./scripts/index.js"></script>
+<script>
+if(localStorage.getItem("toggle")==="yes"){
+    nightMode();
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="">
+    <link rel="stylesheet" href="/src/stylesheets/stylesheet.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=lora@701,401,500,501,400,600,601,2,700,1&display=swap" rel="stylesheet">
+    <!--Hero Delayed Appear code begins-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({duration:1000})
+    </script>
+    <!--Hero Delayed Appear code ends-->
+    <script src="https://kit.fontawesome.com/908283b210.js" crossorigin="anonymous"></script>
+    <title>Sarah Landis</title>
+</head>
+
+<body>
+<a name="top"></a> <!--for top of page scroll-->
+
+<!--Header begins-->
+<div id="header">
+    <div class="home">
+        <a href="/index.html">S.</a> 
+    </div>
+
+    <menu id="nav_bar">
+        <ul>
+            <!--Dark Mode feature starts-->
+            <li>
+                <button class="nightMode" onclick="nightMode()"><i class="fa-regular fa-moon fa-s"></i></button>
+            </li> 
+            <!--Dark Mode feature ends-->
+            <li><a href="/src/pages/aboutme.html">Me</a></li>  
+            <li><a href="/src/pages/blog.html">Blog</a></li> 
+            <li><a href="/src/pages/contact.html">Contact</a></li> 
+        </ul>
+    </menu>
+</div>
+<!--Header ends-->
+
+<!-- main blog body begins -->
+<main class="blogBody">
+<div class="blogHeader">
+    <h3>some light reading</h3>
+</div>
+<section class="preface">
+    <h2>Welcome to my little collection of writings on today's relevant topics and culture. These short
+        articles are my own personal writings that I write whenever I feel like jumping on a soap box.
+        Feel free to enjoy as you please - happy reading!
+    </h2>
+</section>
+
+<!-- both galleries wrapper -->
+<div class="wrapper">
+<!-- small navigational styling begins -->
+    <nav class="primaryNav">
+        <ul class="smallCarousel">
+            <li>
+                <span class="descrip">
+                    <a href="#image-1">
+                        <span class="brief">
+                        <h1>What We Can Learn from WFH</h1>
+                        <h3>Nov. 8 2022 | 2-min. read</h3>
+                        <p>Click to read</p>
+                        </span>
+                        <img class="primaryNav__img" title="The Hybrid Work Role" 
+                        src="/src/images/work.jpg" alt="Desk aerial" />
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span class="descrip">
+                    <a href="#image-2">
+                        <span class="brief">
+                        <h1>A Romantic's Guide to Italy</h1>
+                        <h3>Nov. 8 2022 | 2-min. read</h3>
+                        <p>Click to read</p>
+                        </span>
+                        <img class="primaryNav__img" title="Travel Inspiration" 
+                        src="/src/images/italy.jpg" alt="Italian alleyway" />
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span class="descrip">
+                    <a href="#image-3">
+                        <span class="brief">
+                        <h1>Will Leonardo DiCaprio ever shed his wolfism?</h1>
+                        <h3>Nov. 8 2022 | 2-min. read</h3>
+                        <p>Click to read</p>
+                        </span>
+                        <img class="primaryNav__img" title="Leonardo DiCaprio: Bachelor Forever?" 
+                        src="/src/images/wolf.jpg" alt="Wolf at twilight" />
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span class="descrip">
+                    <a href="#image-4">
+                        <span class="brief">
+                        <h1>For Better or For Worse: Post Covid</h1>
+                        <h3>Nov. 8 2022 | 2-min. read</h3>
+                        <p>Click to read</p>
+                        </span>
+                        <img class="primaryNav__img" title="Post Covid Changes" 
+                        src="/src/images/covid.jpg" alt="A covid bacteria cell" />
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span class="descrip">
+                    <a href="#image-5">
+                        <span class="brief">
+                        <h1>Pressure Makes Diamonds</h1>
+                        <h3>Nov. 8 2022 | 2-min. read</h3>
+                        <p>Click to read</p>
+                        </span>
+                        <img class="primaryNav__img" title="Pressure Makes Diamonds" 
+                        src="/src/images/diamonds.jpg" alt="A diamond" />
+                    </a>
+                </span>
+            </li>
+        </ul>
+    </nav>
+<!-- small navigation ends -->
+<!-- large blog gallery begins -->
+    <div class="gallery">
+        <ul class="posts">
+            <li>
+                <div class="blogEntry">
+                    <div class="writing">
+                        <h1>
+                            What We Can Learn from WFH
+                        </h1>
+                        <h2>November 8, 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos sit quidem facilis saepe. Earum harum dolorem rerum voluptate. Adipisci doloremque fugit explicabo qui eos quaerat velit accusantium libero minus.</p>
+                    </div>
+                    <img class="gallery__img" id="image-1" src="/src/images/work.jpg" alt="desk aerial"/>
+                </div>
+            </li> 
+            <li>
+                <div class="blogEntry">
+                    <div class="writing">
+                        <h1>A Romantic's Guide to Italy</h1>
+                        <h2>November 8, 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos sit quidem facilis saepe. Earum harum dolorem rerum voluptate. Adipisci doloremque fugit explicabo qui eos quaerat velit accusantium libero minus.</p>
+                    </div>
+                    <img class="gallery__img" id="image-2" src="/src/images/italy.jpg" alt="italian alleyway" />
+                </div>
+            </li>
+            <li>
+                <div class="blogEntry">
+                    <div class="writing">
+                        <h1>Will Leonardo DiCaprio ever shed his wolfism?</h1>
+                        <h2>November 8, 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos sit quidem facilis saepe. Earum harum dolorem rerum voluptate. Adipisci doloremque fugit explicabo qui eos quaerat velit accusantium libero minus.</p>
+                    </div>
+                    <img class="gallery__img" id="image-3" src="/src/images/wolf.jpg" alt="wolf in twilight" />
+                </div>
+            </li>
+            <li>
+                <div class="blogEntry">
+                    <div class="writing">
+                        <h1>For Better or For Worse: Post Covid</h1>
+                        <h2>November 8, 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos sit quidem facilis saepe. Earum harum dolorem rerum voluptate. Adipisci doloremque fugit explicabo qui eos quaerat velit accusantium libero minus.</p>
+                    </div>
+                    <img class="gallery__img" id="image-4" src="/src/images/covid.jpg" alt="covid bacteria" />
+                </div>
+            </li>
+            <li>
+                <div class="blogEntry">
+                    <div class="writing">
+                        <h1>Pressure Makes Diamonds</h1>
+                        <h2>November 8, 2022</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos sit quidem facilis saepe. Earum harum dolorem rerum voluptate. Adipisci doloremque fugit explicabo qui eos quaerat velit accusantium libero minus.</p>
+                    </div>
+                    <img class="gallery__img" id="image-5" src="../images/diamonds.jpg" alt="diamonds" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- large gallery ends -->
+</main>
+<!-- blog body ends -->
+
+<!--Footer begins-->
+<footer class="footer">
+    <nav class="bottomNav">
+        <a href="#top">Back to Top</a>
+        <a href="/src/pages/aboutme.html">About</a>
+        <a href="/src/pages/contact.html">Say Hello</a>
+    </nav>
+    <section class="copy">
+        <div class="copyright">
+        <p>Designed by Sarah Landis • 2022 &copy; </p>
+        </div>
+        <div class="homeLink">
+            <a href="/index.html">S.</a> 
+        </div>
+    </section><br>
+</footer> 
+<!--Footer ends-->
+
+<script src="../scripts/index.js"></script>
+<script>
+if(localStorage.getItem("toggle")==="yes"){
+    nightMode();
+}
+</script>
+
+</body>
+</html>
