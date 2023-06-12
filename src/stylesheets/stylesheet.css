@@ -893,20 +893,16 @@
 
     .grid-gallery {
         display: grid;
-        place-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(50vmin, 1fr));
-        column-gap: 10px;
-        row-gap: 15px;
-        place-items:center;
-        justify-content: space-around;
-        width:98%;
-        padding-bottom:50px;
-        padding-left: 2vw;
-        margin-bottom:3vh;
-        margin-top:0px;
+        grid-template-columns: repeat(auto-fit, minmax(475px, 1fr)); /* Set the minimum and maximum width of each column */
+        grid-auto-rows: 70vh;
+        gap: 20px;
+        justify-items: center;
+        width: 98%;
+        padding: 1% 1%;
+        margin: 0 auto 3vh;
         animation: fadeIn 3000ms;
         animation-fill-mode: backwards; 
-    }
+      }
 
     .grid-gallery li{
         list-style-type: none;
@@ -923,18 +919,21 @@
         transform: translateY(-3px);
     }
 
-    .tile{
+    .tile {
         background: #FBF1EA;
         box-shadow: 0 10px 30px -15px;
-        height: 250px;
-        max-width:325px;
+        height: 100%;      
+        margin: 10px;
+        border-radius: 10px;
+        overflow-x: scroll;
     }
 
     .content{
         padding:20px;
         height:180px;
-        overflow-x:scroll;
+        /* overflow-x:scroll; */
         text-align: center;
+        padding-bottom: 0px;
     } 
 
     .upper-content{
@@ -943,22 +942,33 @@
         letter-spacing: 1.5px;
     }
 
-    .upper-content img{
-        width:120px;
-        margin-top:2vh;
-        transform: translate(85px, 10px);
+    .upper-content img {
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: fill;
+        padding-top: 10px;
     }
 
     .lower-content p{
         font-family: "sans-serif";
         color:#261405;
+        /* margin-top: 15px; */
     }
 
-    .media-links a{
-        transform: translate(10px,5px);
-        padding:0; 
-        width:90%;
-        display: block;
+
+    .media-links a { 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 20px 10px 0;
+        width: 100%;
+        margin-top: 275px;
+    }
+    
+    .media-links a i {
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 1.2rem;
     }
 
     /* CONNECT PAGE styling */
