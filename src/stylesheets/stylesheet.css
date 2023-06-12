@@ -937,6 +937,11 @@
     } 
 
     .upper-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         font-family: "lora";
         font-weight: 200;
         letter-spacing: 1.5px;
